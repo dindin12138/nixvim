@@ -1,4 +1,4 @@
 {
   # Import all your plugins here
-  imports = [ ./bufferline.nix ];
+  imports = [ ./bufferline.nix ./catppuccin.nix ];
 }
