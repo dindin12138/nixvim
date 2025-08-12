@@ -11,5 +11,6 @@
     ./telescope.nix
     ./neo-tree.nix
     ./gitsigns.nix
+    ./comment.nix
   ];
 }
