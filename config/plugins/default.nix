@@ -10,5 +10,6 @@
     ./project-nvim.nix
     ./telescope.nix
     ./neo-tree.nix
+    ./gitsigns.nix
   ];
 }
