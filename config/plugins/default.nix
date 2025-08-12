@@ -5,5 +5,6 @@
     ./bufferline.nix
     ./catppuccin.nix
     ./dashboard.nix
+    ./lualine.nix
   ];
 }
