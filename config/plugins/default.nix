@@ -9,5 +9,6 @@
     ./nvim-treesitter.nix
     ./project-nvim.nix
     ./telescope.nix
+    ./neo-tree.nix
   ];
 }
