@@ -7,5 +7,6 @@
     ./dashboard.nix
     ./lualine.nix
     ./nvim-treesitter.nix
+    ./telescope.nix
   ];
 }
