@@ -8,13 +8,14 @@
       };
       settings = {
         options = {
-          disabled_filetypes = {
-            __unkeyed-1 = "startify";
-            __unkeyed-2 = "neo-tree";
-            statusline = [ "dap-repl" ];
-            winbar = [ "aerial" "dap-repl" "neotest-summary" ];
+          component_separators = {
+            left = "";
+            right = "";
           };
-          globalstatus = true;
+          section_separators = {
+            left = " ";
+            right = " ";
+          };
         };
         sections = {
           lualine_a = [ "mode" ];
@@ -70,22 +71,6 @@
             sep = " ) ";
           }];
           lualine_z = [{ __unkeyed-1 = "location"; }];
-        };
-        tabline = {
-          lualine_a = [{
-            __unkeyed-1 = "buffers";
-            symbols = { alternate_file = ""; };
-          }];
-          lualine_z = [ "tabs" ];
-        };
-        winbar = {
-          lualine_c = [{ __unkeyed-1 = "navic"; }];
-          lualine_x = [{
-            __unkeyed-1 = "filename";
-            newfile_status = true;
-            path = 3;
-            shorting_target = 150;
-          }];
         };
       };
     };
