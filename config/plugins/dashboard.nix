@@ -3,46 +3,66 @@
     dashboard = {
       enable = true;
       settings = {
-        change_to_vcs_root = true;
+        theme = "doom";
         config = {
-          footer = [ "Made with ❤️" ];
           header = [
-            "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
-            "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
-            "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
-            "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
-            "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
-            "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
+            ""
+            ""
+            ""
+            ""
+            ""
+            ""
+            ""
+            ""
+            "███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗"
+            "████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║"
+            "██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║"
+            "██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║"
+            "██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║"
+            "╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝"
+            ""
+            ""
           ];
-          mru = { limit = 20; };
-          project = { enable = false; };
-          shortcut = [
+          center = [
             {
-              action = {
-                __raw = "function(path) vim.cmd('Telescope find_files') end";
-              };
-              desc = "Files";
-              group = "Label";
-              icon = " ";
-              icon_hl = "@variable";
+              action = "Telescope projects";
+              desc = "Projects";
+              desc_hl = "String";
+              icon = "  ";
+              icon_hl = "Title";
+              key = "p";
+              key_hl = "Number";
+            }
+            {
+              action = "Telescope oldfiles";
+              desc = "Recent files";
+              desc_hl = "String";
+              icon = "  ";
+              icon_hl = "Title";
+              key = "o";
+              key_hl = "Number";
+            }
+            {
+              action = "Telescope find_files";
+              desc = "Find Files";
+              desc_hl = "String";
+              icon = "  ";
+              icon_hl = "Title";
               key = "f";
+              key_hl = "Number";
             }
             {
-              action = "Telescope app";
-              desc = " Apps";
-              group = "DiagnosticHint";
-              key = "a";
-            }
-            {
-              action = "Telescope dotfiles";
-              desc = " dotfiles";
-              group = "Number";
-              key = "d";
+              action = "qa";
+              desc = "Quit";
+              desc_hl = "String";
+              icon = "  ";
+              icon_hl = "Title";
+              key = "q";
+              key_hl = "Number";
             }
           ];
-          week_header = { enable = true; };
+          footer = [ "" "Talk is cheap. Show me the code." ];
         };
-        theme = "hyper";
       };
     };
   };
