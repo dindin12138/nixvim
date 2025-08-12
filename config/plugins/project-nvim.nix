@@ -2,10 +2,6 @@
   plugins = {
     project-nvim = {
       enable = true;
-      lazyLoad = {
-        enable = true;
-        settings = { cmd = [ "Telescope" ]; };
-      };
       enableTelescope = true;
       settings = {
         detection_methods = [ "pattern" ];

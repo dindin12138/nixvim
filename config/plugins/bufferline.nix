@@ -7,23 +7,11 @@
     };
     bufferline = {
       enable = true;
-      lazyLoad = {
-        enable = true;
-        settings = { event = [ "BufReadPost" "BufNewFile" ]; };
-      };
+      # lazyLoad = {
+      #   enable = true;
+      #   settings = { event = [ "BufReadPost" "BufNewFile" ]; };
+      # };
       settings = {
-        highlights = {
-          buffer_selected = { bg = "#363a4f"; };
-          fill = { bg = "#1e2030"; };
-          numbers_selected = { bg = "#363a4f"; };
-          separator = { fg = "#1e2030"; };
-          separator_selected = {
-            bg = "#363a4f";
-            fg = "#1e2030";
-          };
-          separator_visible = { fg = "#1e2030"; };
-          tab_selected = { bg = "#363a4f"; };
-        };
         options = {
           close_command = "Bdelete! %d";
           right_mouse_command = "Bdelete! %d";
@@ -85,13 +73,14 @@
           max_prefix_length = 15;
           mode = "buffers";
           modified_icon = "●";
-          numbers = {
-            __raw = ''
-              function(opts)
-                return string.format('%s·%s', opts.raise(opts.id), opts.lower(opts.ordinal))
-              end
-            '';
-          };
+          numbers = "ordinal";
+          # numbers = {
+          #   __raw = ''
+          #     function(opts)
+          #       return string.format('%s·%s', opts.raise(opts.id), opts.lower(opts.ordinal))
+          #     end
+          #   '';
+          # };
           offsets = [{
             filetype = "neo-tree";
             highlight = "Directory";

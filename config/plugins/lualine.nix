@@ -72,7 +72,8 @@
           }];
           lualine_z = [{ __unkeyed-1 = "location"; }];
         };
-        extensions = ["neo-tree" "nvim-tree" "toggleterm" "aerial" "symbols-outline"];
+        extensions =
+          [ "neo-tree" "nvim-tree" "toggleterm" "aerial" "symbols-outline" ];
       };
     };
   };

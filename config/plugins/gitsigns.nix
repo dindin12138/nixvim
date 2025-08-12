@@ -2,7 +2,10 @@
   plugins = {
     gitsigns = {
       enable = true;
-      lazyLoad.enable = true;
+      # lazyLoad = {
+      #   enable = true;
+      #   settings = { lazy = true; };
+      # };
       settings = {
         trouble = false;
         current_line_blame = true;
