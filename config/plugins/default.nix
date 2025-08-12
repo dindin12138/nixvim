@@ -6,5 +6,6 @@
     ./catppuccin.nix
     ./dashboard.nix
     ./lualine.nix
+    ./nvim-treesitter.nix
   ];
 }
