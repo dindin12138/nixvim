@@ -4,5 +4,6 @@
     ./lz-n.nix
     ./bufferline.nix
     ./catppuccin.nix
+    ./dashboard.nix
   ];
 }
