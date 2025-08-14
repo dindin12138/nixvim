@@ -1,11 +1,1 @@
-{
-  lsp = {
-    servers = {
-      nixd = {
-        enable = true;
-        activate = true;
-        # settings = { };
-      };
-    };
-  };
-}
+{ plugins = { lsp = { servers = { nixd = { enable = true; }; }; }; }; }
