@@ -13,5 +13,6 @@
     ./gitsigns.nix
     ./comment.nix
     ./blink-cmp.nix
+    ./lsp
   ];
 }
