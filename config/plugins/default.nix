@@ -1,4 +1,4 @@
-{
+_: {
   # Import all your plugins here
   imports = [
     ./lz-n.nix
