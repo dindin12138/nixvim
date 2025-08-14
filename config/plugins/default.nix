@@ -12,5 +12,6 @@
     ./neo-tree.nix
     ./gitsigns.nix
     ./comment.nix
+    ./blink-cmp.nix
   ];
 }
