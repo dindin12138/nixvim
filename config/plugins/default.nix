@@ -12,6 +12,7 @@
     ./neo-tree.nix
     ./gitsigns.nix
     ./comment.nix
+    ./conform.nix
     ./blink-cmp.nix
     ./lsp
   ];
