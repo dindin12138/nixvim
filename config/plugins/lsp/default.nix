@@ -1,6 +1,6 @@
 {
   # Import all your plugins here
-  imports = [ ./nix.nix ];
+  imports = [ ./nix.nix ./lua.nix ];
 
   plugins = {
     lsp = {
