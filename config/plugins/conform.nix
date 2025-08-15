@@ -9,6 +9,7 @@
     jq
     cmake-format
     sql-formatter
+    black
   ];
   plugins = {
     conform-nvim = {
@@ -20,6 +21,7 @@
           c = [ "clang_format" ];
           cpp = [ "clang_format" ];
           cmake = [ "cmake_format" ];
+          python = [ "ruff_format" "black" ];
           go = [ "gofumpt" ];
           sh = [ "shfmt" ];
           json = [ "jq" ];
