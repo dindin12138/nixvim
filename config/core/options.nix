@@ -37,7 +37,7 @@
     pumheight = 10; # Limit popup menu height to 10 items
     mouse = "a"; # Enable mouse support in all modes
     clipboard = "unnamedplus"; # Sync Neovim clipboard with the system clipboard
-    winborder = "rounded";
+    # winborder = "rounded";
 
     # --------------------------
     # Indentation
