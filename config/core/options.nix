@@ -3,8 +3,7 @@
     # --------------------------
     # Documents and Undo
     # --------------------------
-    autowrite =
-      true; # Automatically save changes when switching buffers or running certain commands
+    autowrite = true; # Automatically save changes when switching buffers or running certain commands
     autoread = true; # Automatically reload files changed outside of Neovim
     undofile = true; # Enable persistent undo (undo history is saved to disk)
     undolevels = 10000; # Maximum number of undo steps
@@ -13,12 +12,10 @@
     # Search and Replace
     # --------------------------
     ignorecase = true; # Ignore case in search patterns
-    smartcase =
-      true; # Override 'ignorecase' if search pattern contains uppercase letters
+    smartcase = true; # Override 'ignorecase' if search pattern contains uppercase letters
     incsearch = true; # Show search matches as you type
     hlsearch = false; # Do not keep matches highlighted after search is done
-    inccommand =
-      "nosplit"; # Show live preview of substitutions without splitting the window
+    inccommand = "nosplit"; # Show live preview of substitutions without splitting the window
 
     # --------------------------
     # User Interface
@@ -29,8 +26,7 @@
     signcolumn = "yes"; # Always show the sign column to avoid text shifting
     termguicolors = true; # Enable true color support
     scrolloff = 8; # Keep at least 8 lines visible above/below the cursor
-    sidescrolloff =
-      8; # Keep at least 8 columns visible left/right of the cursor
+    sidescrolloff = 8; # Keep at least 8 columns visible left/right of the cursor
     laststatus = 3; # Global statusline for all windows (Neovim 0.9+)
     showmode = false; # Hide mode indicator (statusline plugin usually shows it)
     list = true; # Show invisible characters like tabs and spaces
@@ -53,8 +49,7 @@
     # Split Windows
     # --------------------------
     splitbelow = true; # New horizontal splits open below the current window
-    splitright =
-      true; # New vertical splits open to the right of the current window
+    splitright = true; # New vertical splits open to the right of the current window
     splitkeep = "screen"; # Maintain screen view when splitting (Neovim 0.9+)
 
     # --------------------------
@@ -67,8 +62,7 @@
     # --------------------------
     # Command-line and Completion
     # --------------------------
-    wildmode =
-      "longest:full,full"; # Command-line completion: longest common match, then full list
+    wildmode = "longest:full,full"; # Command-line completion: longest common match, then full list
   };
 
   globals = {

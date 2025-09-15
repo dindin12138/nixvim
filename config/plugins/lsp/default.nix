@@ -1,6 +1,12 @@
 {
   # Import all your plugins here
-  imports = [ ./nix.nix ./lua.nix ./clangd.nix ./pyright.nix ./ruff.nix ];
+  imports = [
+    ./nix.nix
+    ./lua.nix
+    ./clangd.nix
+    ./pyright.nix
+    ./ruff.nix
+  ];
 
   plugins = {
     lsp = {

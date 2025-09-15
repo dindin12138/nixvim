@@ -81,15 +81,20 @@
           #     end
           #   '';
           # };
-          offsets = [{
-            filetype = "neo-tree";
-            highlight = "Directory";
-            text = "File Explorer";
-            text_align = "center";
-          }];
+          offsets = [
+            {
+              filetype = "neo-tree";
+              highlight = "Directory";
+              text = "File Explorer";
+              text_align = "center";
+            }
+          ];
           persist_buffer_sort = true;
           right_trunc_marker = "";
-          separator_style = [ "|" "|" ];
+          separator_style = [
+            "|"
+            "|"
+          ];
           show_buffer_close_icons = true;
           show_buffer_icons = true;
           show_close_icon = true;

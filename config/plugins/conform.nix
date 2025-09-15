@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   extraPackages = with pkgs; [
     # Formatter
     stylua
@@ -21,7 +22,10 @@
           c = [ "clang_format" ];
           cpp = [ "clang_format" ];
           cmake = [ "cmake_format" ];
-          python = [ "ruff_format" "black" ];
+          python = [
+            "ruff_format"
+            "black"
+          ];
           go = [ "gofumpt" ];
           sh = [ "shfmt" ];
           json = [ "jq" ];

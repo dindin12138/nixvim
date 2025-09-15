@@ -19,7 +19,9 @@
           end
         '';
       };
-      options = { desc = "Toggle comment"; };
+      options = {
+        desc = "Toggle comment";
+      };
     }
     {
       mode = [ "n" ];
@@ -31,7 +33,9 @@
           end
         '';
       };
-      options = { desc = "Toggle comment"; };
+      options = {
+        desc = "Toggle comment";
+      };
     }
   ];
 }

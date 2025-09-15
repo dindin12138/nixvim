@@ -5,7 +5,10 @@
       lazyLoad = {
         enable = true;
         settings = {
-          event = [ "BufReadPost" "BufNewFile" ];
+          event = [
+            "BufReadPost"
+            "BufNewFile"
+          ];
           cmd = [
             "TSInstall"
             "TSBufEnable"
@@ -35,4 +38,3 @@
     };
   };
 }
-

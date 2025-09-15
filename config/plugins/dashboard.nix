@@ -61,10 +61,12 @@
               key_hl = "Number";
             }
           ];
-          footer = [ "" "Talk is cheap. Show me the code." ];
+          footer = [
+            ""
+            "Talk is cheap. Show me the code."
+          ];
         };
       };
     };
   };
 }
-

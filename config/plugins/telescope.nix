@@ -4,7 +4,9 @@
       enable = true;
       lazyLoad = {
         enable = true;
-        settings = { cmd = [ "Telescope" ]; };
+        settings = {
+          cmd = [ "Telescope" ];
+        };
       };
       settings = {
         defaults = {
@@ -13,7 +15,9 @@
               prompt_position = "top";
               results_width = 0.6;
             };
-            vertical = { mirror = false; };
+            vertical = {
+              mirror = false;
+            };
           };
           sorting_strategy = "ascending";
           mappings = {
@@ -42,7 +46,9 @@
               "<C-d>" = {
                 __raw = "require('telescope.actions').preview_scrolling_down";
               };
-              "<C-c>" = { __raw = "require('telescope.actions').close"; };
+              "<C-c>" = {
+                __raw = "require('telescope.actions').close";
+              };
             };
           };
         };
@@ -50,4 +56,3 @@
     };
   };
 }
-

@@ -8,14 +8,20 @@
       # };
       window = {
         width = 25;
-        mappings = { "l" = "open"; };
+        mappings = {
+          "l" = "open";
+        };
       };
     };
   };
-  keymaps = [{
-    mode = [ "n" ];
-    key = "<leader>e";
-    action = "<cmd>Neotree toggle<cr>";
-    options = { desc = "Explorer NeoTree"; };
-  }];
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle<cr>";
+      options = {
+        desc = "Explorer NeoTree";
+      };
+    }
+  ];
 }

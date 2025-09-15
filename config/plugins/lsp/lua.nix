@@ -6,7 +6,9 @@
           enable = true;
           settings = {
             runtime.version = "LuaJIT";
-            workspace = { checkThirdParty = false; };
+            workspace = {
+              checkThirdParty = false;
+            };
           };
         };
       };

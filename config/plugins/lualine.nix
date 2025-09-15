@@ -4,7 +4,12 @@
       enable = true;
       lazyLoad = {
         enable = true;
-        settings = { event = [ "BufReadPost" "BufNewFile" ]; };
+        settings = {
+          event = [
+            "BufReadPost"
+            "BufNewFile"
+          ];
+        };
       };
       settings = {
         options = {
@@ -20,7 +25,10 @@
         sections = {
           lualine_a = [ "mode" ];
           lualine_b = [ "branch" ];
-          lualine_c = [ "filename" "diff" ];
+          lualine_c = [
+            "filename"
+            "diff"
+          ];
           lualine_x = [
             "diagnostics"
             {
@@ -43,39 +51,49 @@
                   end
                 '';
               };
-              color = { fg = "#ffffff"; };
+              color = {
+                fg = "#ffffff";
+              };
               icon = "";
             }
             "encoding"
             "fileformat"
             "filetype"
           ];
-          lualine_y = [{
-            __unkeyed-1 = "aerial";
-            colored = true;
-            cond = {
-              __raw = ''
-                function()
-                  local buf_size_limit = 1024 * 1024
-                  if vim.api.nvim_buf_get_offset(0, vim.api.nvim_buf_line_count(0)) > buf_size_limit then
-                    return false
-                  end
+          lualine_y = [
+            {
+              __unkeyed-1 = "aerial";
+              colored = true;
+              cond = {
+                __raw = ''
+                  function()
+                    local buf_size_limit = 1024 * 1024
+                    if vim.api.nvim_buf_get_offset(0, vim.api.nvim_buf_line_count(0)) > buf_size_limit then
+                      return false
+                    end
 
-                  return true
-                end
-              '';
-            };
-            dense = false;
-            dense_sep = ".";
-            depth = { __raw = "nil"; };
-            sep = " ) ";
-          }];
-          lualine_z = [{ __unkeyed-1 = "location"; }];
+                    return true
+                  end
+                '';
+              };
+              dense = false;
+              dense_sep = ".";
+              depth = {
+                __raw = "nil";
+              };
+              sep = " ) ";
+            }
+          ];
+          lualine_z = [ { __unkeyed-1 = "location"; } ];
         };
-        extensions =
-          [ "neo-tree" "nvim-tree" "toggleterm" "aerial" "symbols-outline" ];
+        extensions = [
+          "neo-tree"
+          "nvim-tree"
+          "toggleterm"
+          "aerial"
+          "symbols-outline"
+        ];
       };
     };
   };
 }
-
