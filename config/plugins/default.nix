@@ -13,6 +13,7 @@ _: {
     ./gitsigns.nix
     ./comment.nix
     ./conform.nix
+    ./flash.nix
     ./blink-cmp.nix
     ./lsp
   ];
