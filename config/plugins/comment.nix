@@ -37,5 +37,21 @@
         desc = "Toggle comment";
       };
     }
+        {
+      mode = [ "v" ];
+      key = "<C-/>";
+      action = "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>";
+      options = {
+        desc = "Toggle comment";
+      };
+    }
+    {
+      mode = [ "v" ];
+      key = "<leader>/";
+      action = "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>";
+      options = {
+        desc = "Toggle comment";
+      };
+    }
   ];
 }
