@@ -15,6 +15,11 @@ _: {
     ./conform.nix
     ./flash.nix
     ./blink-cmp.nix
+    ./which-key.nix
+    ./trouble.nix
+    ./indent-blankline.nix
+    ./fidget.nix
+    ./dressing.nix
     ./lsp
   ];
 }
