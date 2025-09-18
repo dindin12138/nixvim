@@ -1,0 +1,7 @@
+{
+  plugins = {
+    dressing = {
+      enable = true;
+    };
+  };
+}
