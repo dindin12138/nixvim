@@ -14,6 +14,8 @@
             ""
             ""
             ""
+            ""
+            ""
             "███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗"
             "████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║"
             "██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║"
@@ -22,11 +24,12 @@
             "╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝"
             ""
             ""
+            ""
           ];
           center = [
             {
               action = "Telescope projects";
-              desc = "Projects";
+              desc = "Projects                      ";
               desc_hl = "String";
               icon = "  ";
               icon_hl = "Title";
@@ -35,7 +38,7 @@
             }
             {
               action = "Telescope oldfiles";
-              desc = "Recent files";
+              desc = "Recent files                  ";
               desc_hl = "String";
               icon = "  ";
               icon_hl = "Title";
@@ -44,7 +47,7 @@
             }
             {
               action = "Telescope find_files";
-              desc = "Find Files";
+              desc = "Find Files                    ";
               desc_hl = "String";
               icon = "  ";
               icon_hl = "Title";
@@ -52,8 +55,17 @@
               key_hl = "Number";
             }
             {
+              action = ":ene | startinsert";
+              desc = "New File                      ";
+              desc_hl = "String";
+              icon = "  ";
+              icon_hl = "Title";
+              key = "n";
+              key_hl = "Number";
+            }
+            {
               action = "qa";
-              desc = "Quit";
+              desc = "Quit                      ";
               desc_hl = "String";
               icon = "  ";
               icon_hl = "Title";
@@ -62,6 +74,7 @@
             }
           ];
           footer = [
+            ""
             ""
             "Talk is cheap. Show me the code."
           ];
