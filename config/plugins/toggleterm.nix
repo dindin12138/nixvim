@@ -2,13 +2,6 @@
   plugins = {
     toggleterm = {
       enable = true;
-      lazyLoad = {
-        enable = true;
-        ft = [
-          "c"
-          "cpp"
-        ];
-      };
       settings = {
         direction = "float";
         float_opts = {

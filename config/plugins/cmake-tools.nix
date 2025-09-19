@@ -2,6 +2,13 @@
   plugins = {
     cmake-tools = {
       enable = true;
+      # lazyLoad = {
+      #   enable = true;
+      #   ft = [
+      #     "c"
+      #     "cpp"
+      #   ];
+      # };
       settings = {
         cmake_build_directory = "build/\${variant:buildtype}";
         cmake_executor = {
