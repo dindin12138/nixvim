@@ -23,14 +23,43 @@
           };
         };
         sections = {
-          lualine_a = [ "mode" ];
-          lualine_b = [ "branch" ];
-          lualine_c = [
+          lualine_a = [
+            {
+              __unkeyed-1 = "mode";
+              icon = "";
+            }
+          ];
+          lualine_b = [
+            {
+              __unkeyed-1 = "filetype";
+              icon_only = true;
+            }
             "filename"
-            "diff"
+          ];
+          lualine_c = [
+            {
+              __unkeyed-1 = "branch";
+              icon = " ";
+            }
+            {
+              __unkeyed-1 = "diff";
+              symbols = {
+                added = " ";
+                modified = " ";
+                removed = " ";
+              };
+            }
           ];
           lualine_x = [
-            "diagnostics"
+            {
+              __unkeyed-1 = "diagnostics";
+              symbols = {
+                error = " ";
+                warn = " ";
+                info = " ";
+                hint = "󰛩 ";
+              };
+            }
             {
               __unkeyed-1 = {
                 __raw = ''
@@ -54,37 +83,22 @@
               color = {
                 fg = "#ffffff";
               };
-              icon = "";
+              icon = "  ~";
             }
-            "encoding"
-            "fileformat"
-            "filetype"
           ];
           lualine_y = [
-            {
-              __unkeyed-1 = "aerial";
-              colored = true;
-              cond = {
-                __raw = ''
-                  function()
-                    local buf_size_limit = 1024 * 1024
-                    if vim.api.nvim_buf_get_offset(0, vim.api.nvim_buf_line_count(0)) > buf_size_limit then
-                      return false
-                    end
-
-                    return true
-                  end
-                '';
-              };
-              dense = false;
-              dense_sep = ".";
-              depth = {
-                __raw = "nil";
-              };
-              sep = " ) ";
-            }
+            "fileformat"
+            "encoding"
           ];
-          lualine_z = [ { __unkeyed-1 = "location"; } ];
+          lualine_z = [ "progress" ];
+        };
+        inactive_sections = {
+          lualine_a = [ ];
+          lualine_b = [ "filename" ];
+          lualine_c = [ ];
+          lualine_x = [ ];
+          lualine_y = [ ];
+          lualine_z = [ ];
         };
         extensions = [
           "neo-tree"

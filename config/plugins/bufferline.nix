@@ -18,27 +18,6 @@
           always_show_bufferline = true;
           buffer_close_icon = "󰅖";
           close_icon = "";
-          custom_filter = ''
-            function(buf_number, buf_numbers)
-              -- filter out filetypes you don't want to see
-              if vim.bo[buf_number].filetype ~= "<i-dont-want-to-see-this>" then
-                  return true
-              end
-              -- filter out by buffer name
-              if vim.fn.bufname(buf_number) ~= "<buffer-name-I-dont-want>" then
-                  return true
-              end
-              -- filter out based on arbitrary rules
-              -- e.g. filter out vim wiki buffer from tabline in your work repo
-              if vim.fn.getcwd() == "<work-repo>" and vim.bo[buf_number].filetype ~= "wiki" then
-                  return true
-              end
-              -- filter out by it's index number in list (don't show first buffer)
-              if buf_numbers[1] ~= buf_number then
-                  return true
-              end
-            end
-          '';
           diagnostics = "nvim_lsp";
           diagnostics_indicator = ''
             function(count, level, diagnostics_dict, context)
@@ -53,17 +32,6 @@
               return s
             end
           '';
-          enforce_regular_tabs = false;
-          get_element_icon = ''
-            function(element)
-              -- element consists of {filetype: string, path: string, extension: string, directory: string}
-              -- This can be used to change how bufferline fetches the icon
-              -- for an element e.g. a buffer or a tab.
-              -- e.g.
-              local icon, hl = require('nvim-web-devicons').get_icon_by_filetype(element.filetype, { default = false })
-              return icon, hl
-            end
-          '';
           indicator = {
             icon = "▎";
             style = "icon";
@@ -74,13 +42,6 @@
           mode = "buffers";
           modified_icon = "●";
           numbers = "ordinal";
-          # numbers = {
-          #   __raw = ''
-          #     function(opts)
-          #       return string.format('%s·%s', opts.raise(opts.id), opts.lower(opts.ordinal))
-          #     end
-          #   '';
-          # };
           offsets = [
             {
               filetype = "neo-tree";
@@ -95,10 +56,6 @@
             "|"
             "|"
           ];
-          show_buffer_close_icons = true;
-          show_buffer_icons = true;
-          show_close_icon = true;
-          show_tab_indicators = true;
           sort_by = {
             __raw = ''
               function(buffer_a, buffer_b)
@@ -108,7 +65,6 @@
               end
             '';
           };
-          tab_size = 18;
         };
       };
     };
