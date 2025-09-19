@@ -20,6 +20,7 @@ _: {
     ./indent-blankline.nix
     ./fidget.nix
     ./dressing.nix
+    ./nvim-autopairs.nix
     ./lsp
   ];
 }
