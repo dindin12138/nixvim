@@ -14,6 +14,13 @@
     { mode = [ "n" ]; key = "<C-k>"; action = "<C-w>k"; options = { desc = "Go to upper window"; silent = true; };}
     { mode = [ "n" ]; key = "<C-l>"; action = "<C-w>l"; options = { desc = "Go to right window"; silent = true; };}
 
+    # -- Terminal Mappings
+    { mode = [ "t" ]; key = "<esc><esc>"; action = ""; options = { desc = "Enter Normal Mode"; silent = true; };}
+    { mode = [ "t" ]; key = "<C-h>"; action = "<cmd>wincmd h<cr>"; options = { desc = "Go to left window"; silent = true; };}
+    { mode = [ "t" ]; key = "<C-j>"; action = "<cmd>wincmd j<cr>"; options = { desc = "Go to lower window"; silent = true; };}
+    { mode = [ "t" ]; key = "<C-k>"; action = "<cmd>wincmd k<cr>"; options = { desc = "Go to upper window"; silent = true; };}
+    { mode = [ "t" ]; key = "<C-l>"; action = "<cmd>wincmd l<cr>"; options = { desc = "Go to right window"; silent = true; };}
+
     # quick move
     { mode = [ "n" ]; key = "<S-j>"; action = "5j"; options = { desc = "Fast down"; silent = true; };}
     { mode = [ "n" ]; key = "<S-k>"; action = "5k"; options = { desc = "Fast up"; silent = true; };}
