@@ -21,6 +21,8 @@ _: {
     ./fidget.nix
     ./dressing.nix
     ./nvim-autopairs.nix
+    ./cmake-tools.nix
+    ./toggleterm.nix
     ./lsp
   ];
 }
