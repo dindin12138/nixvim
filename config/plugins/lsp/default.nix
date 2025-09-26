@@ -6,6 +6,7 @@
     ./clangd.nix
     ./pyright.nix
     ./ruff.nix
+    ./go.nix
   ];
 
   plugins = {
