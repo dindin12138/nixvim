@@ -214,7 +214,7 @@
     # Resize window using <ctrl> arrow keys
     {
       mode = [ "n" ];
-      key = "C-Up>";
+      key = "<C-Up>";
       action = "<cmd>resize +2<cr>";
       options = {
         desc = "Increase window height";
@@ -662,5 +662,4 @@
       };
     }
   ];
-
 }
