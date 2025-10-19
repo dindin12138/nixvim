@@ -7,6 +7,11 @@
     ./pyright.nix
     ./ruff.nix
     ./go.nix
+    ./rust.nix
+    ./cmake.nix
+    ./cmake.nix
+    ./bash.nix
+    ./sqlls.nix
   ];
 
   plugins = {
