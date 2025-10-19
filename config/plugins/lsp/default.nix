@@ -9,9 +9,8 @@
     ./go.nix
     ./rust.nix
     ./cmake.nix
-    ./cmake.nix
     ./bash.nix
-    ./sqlls.nix
+    # ./sqlls.nix
   ];
 
   plugins = {
