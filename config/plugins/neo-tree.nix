@@ -6,10 +6,12 @@
       #   enable = true;
       #   settings = { cmd = [ "Neotree" ]; };
       # };
-      window = {
-        width = 25;
-        mappings = {
-          "l" = "open";
+      settings = {
+        window = {
+          width = 25;
+          mappings = {
+            "l" = "open";
+          };
         };
       };
     };
