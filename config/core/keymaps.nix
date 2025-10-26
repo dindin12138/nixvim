@@ -103,7 +103,7 @@
     {
       mode = [ "t" ];
       key = "<esc><esc>";
-      action = "";
+      action = "<C-\\><C-n>";
       options = {
         desc = "Enter Normal Mode";
         silent = true;
