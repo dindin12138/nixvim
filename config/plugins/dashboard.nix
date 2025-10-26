@@ -37,6 +37,15 @@
               key_hl = "Number";
             }
             {
+              action = "Telescope session-lens";
+              desc = "Restore Session               ";
+              desc_hl = "String";
+              icon = "󰕰  ";
+              icon_hl = "Title";
+              key = "s";
+              key_hl = "Number";
+            }
+            {
               action = "Telescope oldfiles";
               desc = "Recent files                  ";
               desc_hl = "String";
@@ -49,7 +58,7 @@
               action = "Telescope find_files";
               desc = "Find Files                    ";
               desc_hl = "String";
-              icon = "  ";
+              icon = "  ";
               icon_hl = "Title";
               key = "f";
               key_hl = "Number";

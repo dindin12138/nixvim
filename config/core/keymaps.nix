@@ -496,6 +496,15 @@
     }
     {
       mode = [ "n" ];
+      key = "<leader>fs";
+      action = "<cmd>Telescope session-lens<cr>";
+      options = {
+        desc = "Session";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
       key = "<leader>fh";
       action = "<cmd>Telescope help_tags<cr>";
       options = {
@@ -514,19 +523,21 @@
     }
     {
       mode = [ "n" ];
-      key = "<leader>fs";
-      action = "<cmd>Telescope git_status<cr>";
-      options = {
-        desc = "Git status";
-        silent = true;
-      };
-    }
-    {
-      mode = [ "n" ];
       key = "<leader>fk";
       action = "<cmd>Telescope keymaps<cr>";
       options = {
         desc = "Keymaps";
+        silent = true;
+      };
+    }
+
+    # Session
+    {
+      mode = [ "n" ];
+      key = "<leader>ws";
+      action = "<cmd>AutoSession save<CR>";
+      options = {
+        desc = "SessionSave";
         silent = true;
       };
     }

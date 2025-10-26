@@ -23,6 +23,7 @@ _: {
     ./nvim-autopairs.nix
     ./cmake-tools.nix
     ./toggleterm.nix
+    ./auto-session.nix
     ./lsp
   ];
 }
