@@ -2,6 +2,15 @@
   keymaps = [
     # { mode = [ "n" ]; key = ""; action = ""; options = { desc = ""; silent = true; };}
 
+    {
+      mode = [ "i" ];
+      key = "jk";
+      action = "<Esc>";
+      options = {
+        silent = true;
+      };
+    }
+
     # better up/down
     {
       mode = [
