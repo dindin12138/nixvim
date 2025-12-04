@@ -24,6 +24,7 @@ _: {
     ./cmake-tools.nix
     ./toggleterm.nix
     ./auto-session.nix
+    ./aerial.nix
     ./lsp
   ];
 }
