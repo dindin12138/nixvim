@@ -56,15 +56,7 @@
             "|"
             "|"
           ];
-          sort_by = {
-            __raw = ''
-              function(buffer_a, buffer_b)
-                  local modified_a = vim.fn.getftime(buffer_a.path)
-                  local modified_b = vim.fn.getftime(buffer_b.path)
-                  return modified_a > modified_b
-              end
-            '';
-          };
+          sort_by = "insert_after_current";
         };
       };
     };
