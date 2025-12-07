@@ -4,7 +4,6 @@
       enable = true;
       enableTelescope = true;
       settings = {
-        detection_methods = [ "pattern" ];
         excludeDirs = [ "~/.local/*" ];
         patterns = [
           "README.md"
