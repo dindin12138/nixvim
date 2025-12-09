@@ -8,14 +8,11 @@
         end
       '';
     };
-    pyright = {
+    basedpyright = {
       enable = true;
       settings = {
-        pyright = {
-          # Using Ruff's import organizer
+        basedpyright = {
           disableOrganizeImports = true;
-        };
-        python = {
           analysis = {
             ignore = [ ];
             typeCheckingMode = "basic";
