@@ -1,11 +1,5 @@
 {
-  plugins = {
-    lsp = {
-      servers = {
-        bashls = {
-          enable = true;
-        };
-      };
-    };
+  plugins.lsp.servers = {
+    bashls.enable = true;
   };
 }

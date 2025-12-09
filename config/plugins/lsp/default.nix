@@ -3,14 +3,11 @@
   imports = [
     ./nix.nix
     ./lua.nix
-    ./clangd.nix
-    ./pyright.nix
-    ./ruff.nix
+    ./cpp.nix
+    ./python.nix
     ./go.nix
     ./rust.nix
-    ./cmake.nix
     ./bash.nix
-    # ./sqlls.nix
   ];
 
   plugins = {
@@ -32,10 +29,6 @@
             { "CursorMoved", "CursorMovedI" },
             { group = "lsp_document_highlight", buffer = bufnr, callback = vim.lsp.buf.clear_references }
           )
-        end
-        -- Disable hover in favor of Pyright
-        if client.name == "ruff" then
-          client.server_capabilities.hoverProvider = false
         end
       '';
     };

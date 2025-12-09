@@ -1,11 +1,5 @@
 {
-  plugins = {
-    lsp = {
-      servers = {
-        sqlls = {
-          enable = true;
-        };
-      };
-    };
+  plugins.lsp.servers = {
+    sqlls.enable = true;
   };
 }

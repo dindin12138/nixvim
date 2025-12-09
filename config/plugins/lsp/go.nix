@@ -1,11 +1,5 @@
 {
-  plugins = {
-    lsp = {
-      servers = {
-        gopls = {
-          enable = true;
-        };
-      };
-    };
+  plugins.lsp.servers = {
+    gopls.enable = true;
   };
 }
