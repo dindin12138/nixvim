@@ -4,6 +4,7 @@
     lazyLoad.settings.cmd = [ "FzfLua" ];
     profile = "telescope";
     settings = {
+      register_ui_select = true;
       winopts = {
         height = 0.85;
         width = 0.85;
