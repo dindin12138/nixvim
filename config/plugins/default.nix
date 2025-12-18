@@ -27,7 +27,6 @@ _: {
     ./tmux.nix
     ./fzf-lua.nix
     ./snacks.nix
-    ./dressing.nix
     ./lsp
   ];
 }
