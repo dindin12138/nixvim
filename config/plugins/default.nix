@@ -27,6 +27,7 @@ _: {
     ./aerial.nix
     ./tmux.nix
     ./fzf-lua.nix
+    ./snacks.nix
     ./lsp
   ];
 }
