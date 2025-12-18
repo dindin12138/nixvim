@@ -19,7 +19,6 @@ _: {
     ./trouble.nix
     ./indent-blankline.nix
     ./fidget.nix
-    ./dressing.nix
     ./nvim-autopairs.nix
     ./cmake-tools.nix
     ./toggleterm.nix
