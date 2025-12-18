@@ -26,6 +26,7 @@ _: {
     ./auto-session.nix
     ./aerial.nix
     ./tmux.nix
+    ./fzf-lua.nix
     ./lsp
   ];
 }
