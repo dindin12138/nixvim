@@ -62,6 +62,7 @@
     }
 
     # Move to window using the <ctrl> hjkl keys
+    # Auto set by vim-tmux-navigator
     # {
     #   mode = [ "n" ];
     #   key = "<C-h>";
@@ -98,42 +99,6 @@
     #     silent = true;
     #   };
     # }
-    {
-      mode = [ "n" ];
-      key = "<C-h>";
-      action = "<cmd>lua require('tmux').move_left()<cr>";
-      options = {
-        desc = "Go to left window";
-        silent = true;
-      };
-    }
-    {
-      mode = [ "n" ];
-      key = "<C-j>";
-      action = "<cmd>lua require('tmux').move_bottom()<cr>";
-      options = {
-        desc = "Go to lower window";
-        silent = true;
-      };
-    }
-    {
-      mode = [ "n" ];
-      key = "<C-k>";
-      action = "<cmd>lua require('tmux').move_top()<cr>";
-      options = {
-        desc = "Go to upper window";
-        silent = true;
-      };
-    }
-    {
-      mode = [ "n" ];
-      key = "<C-l>";
-      action = "<cmd>lua require('tmux').move_right()<cr>";
-      options = {
-        desc = "Go to right window";
-        silent = true;
-      };
-    }
 
     # -- Terminal Mappings
     {
@@ -145,42 +110,42 @@
         silent = true;
       };
     }
-    {
-      mode = [ "t" ];
-      key = "<C-h>";
-      action = "<cmd>wincmd h<cr>";
-      options = {
-        desc = "Go to left window";
-        silent = true;
-      };
-    }
-    {
-      mode = [ "t" ];
-      key = "<C-j>";
-      action = "<cmd>wincmd j<cr>";
-      options = {
-        desc = "Go to lower window";
-        silent = true;
-      };
-    }
-    {
-      mode = [ "t" ];
-      key = "<C-k>";
-      action = "<cmd>wincmd k<cr>";
-      options = {
-        desc = "Go to upper window";
-        silent = true;
-      };
-    }
-    {
-      mode = [ "t" ];
-      key = "<C-l>";
-      action = "<cmd>wincmd l<cr>";
-      options = {
-        desc = "Go to right window";
-        silent = true;
-      };
-    }
+    # {
+    #   mode = [ "t" ];
+    #   key = "<C-h>";
+    #   action = "<cmd>wincmd h<cr>";
+    #   options = {
+    #     desc = "Go to left window";
+    #     silent = true;
+    #   };
+    # }
+    # {
+    #   mode = [ "t" ];
+    #   key = "<C-j>";
+    #   action = "<cmd>wincmd j<cr>";
+    #   options = {
+    #     desc = "Go to lower window";
+    #     silent = true;
+    #   };
+    # }
+    # {
+    #   mode = [ "t" ];
+    #   key = "<C-k>";
+    #   action = "<cmd>wincmd k<cr>";
+    #   options = {
+    #     desc = "Go to upper window";
+    #     silent = true;
+    #   };
+    # }
+    # {
+    #   mode = [ "t" ];
+    #   key = "<C-l>";
+    #   action = "<cmd>wincmd l<cr>";
+    #   options = {
+    #     desc = "Go to right window";
+    #     silent = true;
+    #   };
+    # }
 
     # quick move
     {
@@ -257,75 +222,39 @@
     }
 
     # Resize window using <ctrl> arrow keys
-    # {
-    #   mode = [ "n" ];
-    #   key = "<C-Up>";
-    #   action = "<cmd>resize +2<cr>";
-    #   options = {
-    #     desc = "Increase window height";
-    #     silent = true;
-    #   };
-    # }
-    # {
-    #   mode = [ "n" ];
-    #   key = "<C-Down>";
-    #   action = "<cmd>resize -2<cr>";
-    #   options = {
-    #     desc = "Decrease window height";
-    #     silent = true;
-    #   };
-    # }
-    # {
-    #   mode = [ "n" ];
-    #   key = "<C-Left>";
-    #   action = "<cmd>vertical resize -2<cr>";
-    #   options = {
-    #     desc = "Decrease window width";
-    #     silent = true;
-    #   };
-    # }
-    # {
-    #   mode = [ "n" ];
-    #   key = "<C-Right>";
-    #   action = "<cmd>vertical resize +2<cr>";
-    #   options = {
-    #     desc = "Increase window width";
-    #     silent = true;
-    #   };
-    # }
     {
       mode = [ "n" ];
-      key = "<C-Left>";
-      action = "<cmd>lua require('tmux').resize_left()<cr>";
+      key = "<C-Up>";
+      action = "<cmd>resize +2<cr>";
       options = {
-        desc = "Resize window left";
+        desc = "Increase window height";
         silent = true;
       };
     }
     {
       mode = [ "n" ];
       key = "<C-Down>";
-      action = "<cmd>lua require('tmux').resize_bottom()<cr>";
+      action = "<cmd>resize -2<cr>";
       options = {
-        desc = "Resize window down";
+        desc = "Decrease window height";
         silent = true;
       };
     }
     {
       mode = [ "n" ];
-      key = "<C-Up>";
-      action = "<cmd>lua require('tmux').resize_top()<cr>";
+      key = "<C-Left>";
+      action = "<cmd>vertical resize -2<cr>";
       options = {
-        desc = "Resize window up";
+        desc = "Decrease window width";
         silent = true;
       };
     }
     {
       mode = [ "n" ];
       key = "<C-Right>";
-      action = "<cmd>lua require('tmux').resize_right()<cr>";
+      action = "<cmd>vertical resize +2<cr>";
       options = {
-        desc = "Resize window right";
+        desc = "Increase window width";
         silent = true;
       };
     }

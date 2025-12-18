@@ -1,17 +1,10 @@
-{ pkgs, ... }:
 {
-  extraPlugins = with pkgs.vimPlugins; [
-    tmux-nvim
-  ];
-  extraConfigLua = ''
-    require("tmux").setup({
-        navigation = {
-            cycle_navigation = true,
-            enable_default_keybindings = false,
-        },
-        resize = {
-            enable_default_keybindings = false,
-        }
-    })
-  '';
+  plugins.tmux-navigator = {
+    enable = true;
+    settings = {
+      save_on_switch = 2;
+      disable_when_zoomed = 1;
+      no_mappings = 0;
+    };
+  };
 }
