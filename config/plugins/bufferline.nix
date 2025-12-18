@@ -1,6 +1,5 @@
 {
   plugins.web-devicons.enable = true;
-  plugins.bufdelete.enable = true;
   plugins.bufferline = {
     enable = true;
     lazyLoad.settings = {
@@ -11,8 +10,14 @@
     };
     settings = {
       options = {
-        close_command = "Bdelete! %d";
-        right_mouse_command = "Bdelete! %d";
+        # close_command = "Bdelete! %d";
+        # right_mouse_command = "Bdelete! %d";
+        close_command = {
+          __raw = "function(n) require('snacks').bufdelete(n) end";
+        };
+        right_mouse_command = {
+          __raw = "function(n) require('snacks').bufdelete(n) end";
+        };
         always_show_bufferline = true;
         buffer_close_icon = "󰅖";
         close_icon = "";

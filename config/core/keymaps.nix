@@ -339,7 +339,8 @@
     {
       mode = [ "n" ];
       key = "<leader>q";
-      action = "<cmd>Bdelete!<cr>";
+      # action = "<cmd>Bdelete!<cr>";
+      action.__raw = "function() require('snacks').bufdelete() end";
       options = {
         desc = "Delete buffer";
         silent = true;

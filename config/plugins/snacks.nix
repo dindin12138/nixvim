@@ -10,7 +10,7 @@
           relative = "cursor";
           row = -3;
           col = 0;
-          width = 40;
+          width = 30;
           backdrop = false;
         };
       };
