@@ -1,13 +1,10 @@
 {
-  plugins = {
-    trouble = {
-      enable = true;
-      lazyLoad = {
-        enable = true;
-        settings = {
-          cmd = [ "TroubleToggle" "Trouble"];
-        };
-      };
-    };
+  plugins.trouble = {
+    enable = true;
+    lazyLoad.settings.cmd = [
+      "TroubleToggle"
+      "Trouble"
+    ];
   };
 }
+

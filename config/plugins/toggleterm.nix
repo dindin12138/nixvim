@@ -1,10 +1,9 @@
 {
-  plugins = {
-    toggleterm = {
-      enable = true;
-      settings = {
-        open_mapping = "[[<c-\\>]]";
-      };
+  plugins.toggleterm = {
+    enable = true;
+    lazyLoad.settings.cmd = [ "ToggleTerm" ];
+    settings = {
+      open_mapping = "[[<c-\\>]]";
     };
   };
 }

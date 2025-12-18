@@ -1,15 +1,8 @@
 {
-  plugins = {
-    nvim-autopairs = {
-      enable = true;
-      lazyLoad = {
-        enable = true;
-        settings = {
-          event = [
-            "InsertEnter"
-          ];
-        };
-      };
-    };
+  plugins.nvim-autopairs = {
+    enable = true;
+    lazyLoad.settings.event = [
+      "InsertEnter"
+    ];
   };
 }

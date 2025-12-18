@@ -1,7 +1,5 @@
 {
-  plugins = {
-    dressing = {
-      enable = true;
-    };
+  plugins.dressing = {
+    enable = true;
   };
 }
