@@ -25,6 +25,7 @@ _: {
     ./toggleterm.nix
     ./auto-session.nix
     ./aerial.nix
+    ./tmux.nix
     ./lsp
   ];
 }
