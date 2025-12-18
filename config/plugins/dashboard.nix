@@ -45,7 +45,7 @@
             key_hl = "Number";
           }
           {
-            action = "Telescope oldfiles";
+            action = "FzfLua oldfiles";
             desc = "Recent files                  ";
             desc_hl = "String";
             icon = "  ";
@@ -54,7 +54,7 @@
             key_hl = "Number";
           }
           {
-            action = "Telescope find_files";
+            action = "FzfLua files";
             desc = "Find Files                    ";
             desc_hl = "String";
             icon = "  ";

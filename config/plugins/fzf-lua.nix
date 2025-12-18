@@ -1,12 +1,12 @@
 {
   plugins.fzf-lua = {
     enable = true;
-    profile = "telescope";
     lazyLoad.settings.cmd = [ "FzfLua" ];
+    profile = "telescope";
     settings = {
       winopts = {
-        height = 0.95;
-        width = 0.95;
+        height = 0.85;
+        width = 0.85;
         row = 0.35;
         col = 0.50;
         preview = {
