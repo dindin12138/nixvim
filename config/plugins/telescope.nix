@@ -4,13 +4,11 @@
     lazyLoad.settings.cmd = [ "Telescope" ];
     settings = {
       defaults = {
+        layout_strategy = "horizontal";
         layout_config = {
           horizontal = {
             prompt_position = "top";
-            results_width = 0.6;
-          };
-          vertical = {
-            mirror = false;
+            preview_width = 0.55;
           };
         };
         sorting_strategy = "ascending";
