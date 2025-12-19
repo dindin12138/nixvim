@@ -27,6 +27,7 @@ _: {
     ./tmux.nix
     ./fzf-lua.nix
     ./snacks.nix
+    ./nvim-surround.nix
     ./lsp
   ];
 }
