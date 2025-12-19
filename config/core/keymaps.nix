@@ -689,7 +689,7 @@
       mode = [
         "n"
         "x"
-        "o"
+        # "o"
       ];
       key = "s";
       action = {
@@ -707,7 +707,7 @@
       mode = [
         "n"
         "x"
-        "o"
+        # "o"
       ];
       key = "S";
       action = {
