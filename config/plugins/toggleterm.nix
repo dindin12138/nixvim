@@ -45,4 +45,15 @@
       end
     '';
   };
+  keymaps = [
+    {
+      mode = [ "t" ];
+      key = "<esc><esc>";
+      action = "<C-\\><C-n>";
+      options = {
+        desc = "Enter Normal Mode";
+        silent = true;
+      };
+    }
+  ];
 }

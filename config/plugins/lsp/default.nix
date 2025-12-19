@@ -12,8 +12,41 @@
 
   plugins.lsp = {
     enable = true;
+    lazyLoad = {
+      settings = {
+        event = [
+          "BufReadPre"
+          "BufNewFile"
+        ];
+        cmd = [
+          "LspInfo"
+          "LspInstall"
+          "LspStart"
+          "LspRestart"
+          "LspLog"
+        ];
+      };
+    };
     # capabilities = true;
     inlayHints = true;
+    keymaps = {
+      silent = true;
+      diagnostic = {
+        "<leader>j" = "goto_next";
+        "<leader>k" = "goto_prev";
+        "ge" = "open_float";
+      };
+      lspBuf = {
+        "gd" = "definition";
+        "gD" = "declaration";
+        "gr" = "references";
+        "gh" = "hover";
+        "gs" = "signature_help";
+        "gn" = "rename";
+        "ga" = "code_action";
+      };
+      extra = [ ];
+    };
     onAttach = ''
       vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
       -- Highlight symbol under cursor
@@ -51,4 +84,33 @@
       })
     '';
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>li";
+      action = "<cmd>LspInfo<cr>";
+      options = {
+        desc = "LspInfo";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>ll";
+      action = "<cmd>LspLog<cr>";
+      options = {
+        desc = "LspLog";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>lr";
+      action = "<cmd>LspRestart<cr>";
+      options = {
+        desc = "LspRestart";
+        silent = true;
+      };
+    }
+  ];
 }

@@ -46,4 +46,33 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>fp";
+      action = "<cmd>Telescope projects<cr>";
+      options = {
+        desc = "Projects";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>fs";
+      action = "<cmd>Telescope session-lens<cr>";
+      options = {
+        desc = "Session";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>fk";
+      action = "<cmd>Telescope keymaps<cr>";
+      options = {
+        desc = "Keymaps";
+        silent = true;
+      };
+    }
+  ];
 }

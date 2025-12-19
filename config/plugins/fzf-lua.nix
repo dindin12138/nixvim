@@ -45,4 +45,60 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>fb";
+      action = "<cmd>FzfLua buffers<cr>";
+      options = {
+        desc = "Buffers";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>fg";
+      action = "<cmd>FzfLua live_grep<cr>";
+      options = {
+        desc = "Live grep";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>ff";
+      action = "<cmd>FzfLua files<cr>";
+      options = {
+        desc = "Find files";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>fo";
+      action = "<cmd>FzfLua oldfiles<cr>";
+      options = {
+        desc = "Oldfiles";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>fh";
+      action = "<cmd>FzfLua helptags<cr>";
+      options = {
+        desc = "Help page";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>fc";
+      action = "<cmd>FzfLua git_commits<cr>";
+      options = {
+        desc = "Git commits";
+        silent = true;
+      };
+    }
+  ];
 }

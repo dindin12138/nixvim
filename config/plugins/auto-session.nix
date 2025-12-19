@@ -10,4 +10,15 @@
       use_git_branch = true;
     };
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>ws";
+      action = "<cmd>AutoSession save<CR>";
+      options = {
+        desc = "SessionSave";
+        silent = true;
+      };
+    }
+  ];
 }

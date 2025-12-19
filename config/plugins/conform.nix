@@ -13,6 +13,22 @@
   ];
   plugins.conform-nvim = {
     enable = true;
+    lazyLoad.settings = {
+      cmd = [ "ConformInfo" ];
+      event = [ "BufWritePre" ];
+      keys = [
+        {
+          __unkeyed-1 = "<leader>lf";
+          __unkeyed-2.__raw = ''
+            function()
+              require("conform").format({ lsp_fallback = true })
+            end
+          '';
+          mode = "n";
+          desc = "Format (Conform)";
+        }
+      ];
+    };
     settings = {
       formatters_by_ft = {
         lua = [ "stylua" ];

@@ -62,4 +62,51 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<S-h>";
+      action = "<cmd>BufferLineCyclePrev<cr>";
+      options = {
+        desc = "Prev buffer";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<S-l>";
+      action = "<cmd>BufferLineCycleNext<cr>";
+      options = {
+        desc = "Next buffer";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<S-Tab>";
+      action = "<cmd>BufferLineCyclePrev<cr>";
+      options = {
+        desc = "Prev buffer";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<Tab>";
+      action = "<cmd>BufferLineCycleNext<cr>";
+      options = {
+        desc = "Next buffer";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>x";
+      action = "<cmd>BufferLinePickClose<cr>";
+      options = {
+        desc = "Close the selected buffer";
+        silent = true;
+      };
+    }
+  ];
 }

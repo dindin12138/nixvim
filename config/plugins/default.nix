@@ -16,7 +16,7 @@ _: {
     ./flash.nix
     ./blink-cmp.nix
     ./which-key.nix
-    ./trouble.nix
+    # ./trouble.nix
     ./indent-blankline.nix
     ./fidget.nix
     ./nvim-autopairs.nix

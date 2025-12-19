@@ -18,4 +18,15 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>la";
+      action = "<cmd>AerialToggle<cr>";
+      options = {
+        desc = "AerialToggle";
+        silent = true;
+      };
+    }
+  ];
 }

@@ -16,4 +16,15 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>q";
+      action.__raw = "function() require('snacks').bufdelete() end";
+      options = {
+        desc = "Delete buffer";
+        silent = true;
+      };
+    }
+  ];
 }
