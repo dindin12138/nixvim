@@ -12,21 +12,6 @@
 
   plugins.lsp = {
     enable = true;
-    lazyLoad = {
-      settings = {
-        event = [
-          "BufReadPre"
-          "BufNewFile"
-        ];
-        cmd = [
-          "LspInfo"
-          "LspInstall"
-          "LspStart"
-          "LspRestart"
-          "LspLog"
-        ];
-      };
-    };
     # capabilities = true;
     inlayHints = true;
     keymaps = {
