@@ -6,12 +6,11 @@
       event = [
         "BufReadPost"
         "BufNewFile"
+        "BufEnter"
       ];
     };
     settings = {
       options = {
-        # close_command = "Bdelete! %d";
-        # right_mouse_command = "Bdelete! %d";
         close_command = {
           __raw = "function(n) require('snacks').bufdelete(n) end";
         };
