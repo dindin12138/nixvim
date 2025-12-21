@@ -3,7 +3,7 @@ _: {
   imports = [
     ./lz-n.nix
     ./bufferline.nix
-    # ./catppuccin.nix
+    ./catppuccin.nix
     ./dashboard.nix
     ./lualine.nix
     ./nvim-treesitter.nix
