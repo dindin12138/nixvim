@@ -5,8 +5,14 @@
       cmd = [ "ToggleTerm" ];
       keys = [
         {
-          __unkeyed-1 = "<leader>t";
+          __unkeyed-1 = "<leader>tg";
           __unkeyed-2 = "<cmd>lua _lazygit_toggle()<CR>";
+          mode = "n";
+          desc = "Lazygit";
+        }
+        {
+          __unkeyed-1 = "<leader>tt";
+          __unkeyed-2 = "<cmd>ToggleTerm<CR>";
           mode = "n";
           desc = "Lazygit";
         }
