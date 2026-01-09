@@ -3,7 +3,10 @@
     enable = true;
     enableTelescope = true;
     settings = {
-      excludeDirs = [ "~/.local/*" ];
+      excludeDirs = [
+        "~/.local/*"
+        "/nix/store/*"
+      ];
       patterns = [
         "README.md"
         "Cargo.toml"
