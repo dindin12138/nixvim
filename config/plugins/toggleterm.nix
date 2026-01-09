@@ -14,7 +14,7 @@
           __unkeyed-1 = "<leader>tt";
           __unkeyed-2 = "<cmd>ToggleTerm<CR>";
           mode = "n";
-          desc = "Lazygit";
+          desc = "ToggleTerm";
         }
       ];
     };
