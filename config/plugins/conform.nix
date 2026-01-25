@@ -10,6 +10,10 @@
     jq
     cmake-format
     sql-formatter
+    rustfmt
+    taplo
+    buf
+    xmlformat
   ];
   plugins.conform-nvim = {
     enable = true;
@@ -36,6 +40,9 @@
         c = [ "clang_format" ];
         cpp = [ "clang_format" ];
         cmake = [ "cmake_format" ];
+        rust = [ "rustfmt" ];
+        toml = [ "taplo" ];
+        proto = [ "buf" ];
         python = [ "ruff_format" ];
         go = [ "gofumpt" ];
         sh = [ "shfmt" ];
@@ -49,12 +56,13 @@
         vue = [ "prettier" ];
         css = [ "prettier" ];
         scss = [ "prettier" ];
-        less = [ "prettier" ];
         html = [ "prettier" ];
         yaml = [ "prettier" ];
-        markdown = [ "prettier" ];
-        graphql = [ "prettier" ];
-        handlebars = [ "prettier" ];
+        markdown = [
+          "prettier"
+          "injected"
+        ];
+        xml = [ "xmlformat" ];
       };
       format_on_save = {
         lspFallback = true;
