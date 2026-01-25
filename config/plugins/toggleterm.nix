@@ -16,6 +16,30 @@
           mode = "n";
           desc = "ToggleTerm";
         }
+        {
+          __unkeyed-1 = "<leader>th";
+          __unkeyed-2 = "<cmd>1ToggleTerm direction=horizontal<CR>";
+          mode = "n";
+          desc = "ToggleTerm Horizontal (ID 1)";
+        }
+        {
+          __unkeyed-1 = "<leader>tf";
+          __unkeyed-2 = "<cmd>2ToggleTerm direction=float<CR>";
+          mode = "n";
+          desc = "ToggleTerm Float (ID 2)";
+        }
+        {
+          __unkeyed-1 = "<leader>tv";
+          __unkeyed-2 = "<cmd>3ToggleTerm direction=vertical<CR>";
+          mode = "n";
+          desc = "ToggleTerm Vertical (ID 3)";
+        }
+        {
+          __unkeyed-1 = "<leader>tp";
+          __unkeyed-2 = "<cmd>4ToggleTerm direction=tab<CR>";
+          mode = "n";
+          desc = "ToggleTerm Page/Tab (ID 4)";
+        }
       ];
     };
     settings = {
