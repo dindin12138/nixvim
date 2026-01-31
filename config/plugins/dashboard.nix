@@ -1,6 +1,6 @@
 {
   plugins.dashboard = {
-    enable = true;
+    enable = false;
     settings = {
       theme = "doom";
       config = {

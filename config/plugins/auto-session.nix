@@ -1,6 +1,13 @@
 {
   plugins.auto-session = {
     enable = true;
+    lazyLoad = {
+      enable = true;
+      settings = {
+        event = [ "VimEnter" ];
+        cmd = [ "AutoSession" ];
+      };
+    };
     settings = {
       bypass_save_filetypes = [
         "alpha"

@@ -2,6 +2,12 @@
   plugins.project-nvim = {
     enable = true;
     enableTelescope = true;
+    lazyLoad = {
+      enable = true;
+      settings = {
+        event = [ "VimEnter" ];
+      };
+    };
     settings = {
       exclude_dirs = [
         "~/.local/*"

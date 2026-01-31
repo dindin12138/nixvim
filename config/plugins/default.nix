@@ -7,8 +7,6 @@ _: {
     ./dashboard.nix
     ./lualine.nix
     ./nvim-treesitter.nix
-    ./project-nvim.nix
-    ./telescope.nix
     ./neo-tree.nix
     ./gitsigns.nix
     ./comment.nix
@@ -16,16 +14,14 @@ _: {
     ./flash.nix
     ./blink-cmp.nix
     ./which-key.nix
-    # ./trouble.nix
     ./indent-blankline.nix
     ./fidget.nix
     ./nvim-autopairs.nix
     ./cmake-tools.nix
     ./toggleterm.nix
-    ./auto-session.nix
+    ./persistence.nix
     ./aerial.nix
     ./tmux.nix
-    ./fzf-lua.nix
     ./snacks.nix
     ./nvim-surround.nix
     ./lsp

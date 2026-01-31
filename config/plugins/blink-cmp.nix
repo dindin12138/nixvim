@@ -2,7 +2,15 @@
   plugins.friendly-snippets.enable = true;
   plugins.blink-cmp = {
     enable = true;
-    setupLspCapabilities = true;
+    lazyLoad = {
+      settings = {
+        event = [
+          "InsertEnter"
+          "CmdlineEnter"
+        ];
+      };
+    };
+    setupLspCapabilities = false;
     settings = {
       completion = {
         keyword = {

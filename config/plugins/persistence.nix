@@ -3,7 +3,7 @@
     enable = true;
     lazyLoad = {
       settings = {
-        event = "BufReadPre";
+        event = "VimEnter";
       };
     };
     settings = {
@@ -14,4 +14,15 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>fs";
+      action = "<cmd>lua require('persistence').select()<cr>";
+      options = {
+        desc = "Sessions";
+        silent = true;
+      };
+    }
+  ];
 }
