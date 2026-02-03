@@ -8,6 +8,7 @@
     ./go.nix
     ./rust.nix
     ./bash.nix
+    ./zig.nix
   ];
 
   plugins.lsp = {

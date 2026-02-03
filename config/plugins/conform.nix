@@ -41,6 +41,7 @@
         cpp = [ "clang_format" ];
         cmake = [ "cmake_format" ];
         rust = [ "rustfmt" ];
+        zig = [ "zigfmt" ];
         toml = [ "taplo" ];
         proto = [ "buf" ];
         python = [ "ruff_format" ];

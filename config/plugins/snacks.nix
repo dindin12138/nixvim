@@ -2,9 +2,7 @@
   plugins.snacks = {
     enable = true;
     settings = {
-      input = {
-        enabled = true;
-      };
+      input.enabled = true;
       picker = {
         enabled = true;
         ui_select = true;
