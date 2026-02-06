@@ -39,9 +39,9 @@
     # Indentation
     # --------------------------
     expandtab = true; # Convert tabs to spaces
-    shiftwidth = 4; # Number of spaces per indentation level
-    tabstop = 4; # Number of spaces tabs count for
-    softtabstop = 4; # Number of spaces a tab or backspace inserts/removes
+    shiftwidth = 2; # Number of spaces per indentation level
+    tabstop = 2; # Number of spaces tabs count for
+    softtabstop = 2; # Number of spaces a tab or backspace inserts/removes
     shiftround = true; # Round indent to nearest multiple of 'shiftwidth'
     smartindent = true; # Smart auto-indenting for new lines
 
