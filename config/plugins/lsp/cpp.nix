@@ -3,11 +3,11 @@
     neocmake.enable = true;
     clangd = {
       enable = true;
+      package = null;
       cmd = [
         "clangd"
         "--background-index"
         "--clang-tidy"
-        "--query-driver=/nix/store/**/*"
         "--pch-storage=memory"
         "--ranking-model=decision_forest"
         "--completion-style=detailed"
