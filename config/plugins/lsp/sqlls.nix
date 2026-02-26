@@ -1,5 +1,9 @@
 {
   plugins.lsp.servers = {
-    sqlls.enable = true;
+    sqlls = {
+      enable = true;
+      packageFallback = true;
+    };
+
   };
 }

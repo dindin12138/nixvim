@@ -3,7 +3,7 @@
     neocmake.enable = true;
     clangd = {
       enable = true;
-      package = null;
+      packageFallback = true;
       cmd = [
         "clangd"
         "--background-index"

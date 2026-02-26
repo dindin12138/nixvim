@@ -1,5 +1,8 @@
 {
   plugins.lsp.servers = {
-    gopls.enable = true;
+    gopls = {
+      enable = true;
+      packageFallback = true;
+    };
   };
 }

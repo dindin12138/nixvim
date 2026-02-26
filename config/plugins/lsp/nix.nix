@@ -1,5 +1,9 @@
 {
   plugins.lsp.servers = {
-    nixd.enable = true;
+    nixd = {
+      enable = true;
+      packageFallback = true;
+    };
+
   };
 }

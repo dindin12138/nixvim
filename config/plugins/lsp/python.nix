@@ -2,6 +2,7 @@
   plugins.lsp.servers = {
     ruff = {
       enable = true;
+      packageFallback = true;
       onAttach.function = ''
         if client.name == 'ruff' then
           client.server_capabilities.hoverProvider = false
@@ -10,6 +11,7 @@
     };
     basedpyright = {
       enable = true;
+      packageFallback = true;
       settings = {
         basedpyright = {
           disableOrganizeImports = true;

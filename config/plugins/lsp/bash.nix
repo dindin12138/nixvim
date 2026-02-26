@@ -1,5 +1,8 @@
 {
   plugins.lsp.servers = {
-    bashls.enable = true;
+    bashls = {
+      enable = true;
+      packageFallback = true;
+    };
   };
 }

@@ -1,5 +1,9 @@
 {
   plugins.lsp.servers = {
-    zls.enable = true;
+    zls = {
+      enable = true;
+      packageFallback = true;
+    };
+
   };
 }
