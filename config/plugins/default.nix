@@ -4,7 +4,6 @@ _: {
     ./lz-n.nix
     ./bufferline.nix
     ./catppuccin.nix
-    ./dashboard.nix
     ./lualine.nix
     ./nvim-treesitter.nix
     ./neo-tree.nix
@@ -24,6 +23,7 @@ _: {
     ./tmux.nix
     ./snacks.nix
     ./nvim-surround.nix
+    ./trouble.nix
     ./lsp
   ];
 }

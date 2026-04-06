@@ -161,5 +161,23 @@
         silent = true;
       };
     }
+    {
+      mode = [ "n" ];
+      key = "<leader>ls";
+      action = "<cmd>lua Snacks.picker.lsp_symbols()<CR>";
+      options = {
+        desc = "Lsp Symbols";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>lc";
+      action = "<cmd>lua Snacks.picker.lsp_config()<CR>";
+      options = {
+        desc = "Lsp Config";
+        silent = true;
+      };
+    }
   ];
 }
