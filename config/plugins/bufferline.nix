@@ -10,6 +10,25 @@
       ];
     };
     settings = {
+      highlights = {
+        __raw = ''
+          (function()
+            local cp = require("catppuccin.palettes").get_palette("mocha")
+            return require("catppuccin.special.bufferline").get_theme({
+              styles = { "bold" },
+              custom = {
+                all = {
+                  fill = { bg = "none" },
+                  indicator_selected = { fg = cp.text, style = { "bold" } },
+                  modified = { fg = cp.green },
+                  modified_selected = { fg = cp.green },
+                  modified_visible = { fg = cp.green },
+                },
+              },
+            })
+          end)()
+        '';
+      };
       options = {
         close_command = {
           __raw = "function(n) require('snacks').bufdelete(n) end";
