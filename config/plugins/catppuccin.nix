@@ -4,6 +4,7 @@
     settings = {
       flavour = "mocha";
       transparent_background = true;
+      float.transparent = true;
       term_colors = true;
       show_end_of_buffer = false;
       integrations = {
